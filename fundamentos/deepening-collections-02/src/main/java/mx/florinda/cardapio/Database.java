@@ -7,7 +7,7 @@ import static mx.florinda.cardapio.ItemCardapio.CategoriaCardapio.*;
 
 public class Database {
     private final Map<Long, ItemCardapio> itensPorId = new HashMap<>();
-    private final  Map<ItemCardapio, BigDecimal> auditoriaPreco = new HashMap<>();
+//    private final  Map<ItemCardapio, BigDecimal> auditoriaPreco = new HashMap<>();
 
     public Database() {
         var refrescoDoChaves = new ItemCardapio(1L, "Refresco do Chaves",
@@ -54,6 +54,11 @@ public class Database {
                 "Bolo de chocolate com cobertura de brigadeiro.",
                 SOBREMESA, new BigDecimal("5.99"), new BigDecimal("4.99"));
         itensPorId.put(11L, boloDaDonaClotilde);
+
+//        Map<ItemCardapio.CategoriaCardapio, String> categoriasEmPromocao= new EnumMap(ItemCardapio.class);
+//        categoriasEmPromocao.put(SOBREMESA, " O doce perfeito você!");
+//        categoriasEmPromocao.put(ENTRADAS, " Comece sua refeicao com toque de sabor!");
+
     }
 
     public List<ItemCardapio> listaItensCardapio() {
