@@ -10,7 +10,7 @@ import org.eclipse.microprofile.rest.client.inject.RestClient;
 public class StarWarsResource {
 
     @RestClient
-    StarwarsService starwarsService;
+    StarWarsService starwarsService;
 
     @GET
     @Path("starships")
