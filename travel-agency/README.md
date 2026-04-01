@@ -68,3 +68,14 @@ If you want to learn more about building native executables, please consult <htt
 Easily start your REST Web Services
 
 [Related guide section...](https://quarkus.io/guides/getting-started-reactive#reactive-jax-rs-resources)
+
+
+## Terminal CURL commands
+
+```shell script
+curl -X POST -H "Content-Type: text/plain" -d "Qual a politica de cacncelamento para o pacote Aventura Amazonia?" http://localhost:8080/travel
+```
+
+```shell script
+curl -X POST -H "Content-Type: text/plain" -d "Estou planejando uma viagem para o Japao. Qual a melhor época do ano para visitar e por que? Responda em português." http://localhost:8080/travel
+```
