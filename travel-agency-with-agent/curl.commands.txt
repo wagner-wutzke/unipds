@@ -10,3 +10,7 @@ curl -X POST -H "Content-Type: text/plain" -d "Qual a politica de cancelamento p
 curl -X POST -H "Content-Type: text/plain" -d "Quanto custa um pacote de viagem para Bahamas?" http://localhost:8080/travel
 
 
+
+
+
+./mvnw quarkus:add-extension -Dextensions="io.quarkiverse.mcp:quarkus-mcp-server-sse"
