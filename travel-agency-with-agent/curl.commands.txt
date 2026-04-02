@@ -1,0 +1,12 @@
+curl -X POST -H "Content-Type: text/plain" -H "X-User-Name: John Doe" -d "Quais sao as viagens de aventura?" http://localhost:8080/travel
+
+curl -X POST -H "Content-Type: text/plain" -H "X-User-Name: John Doe" -d "Cancele a reserva 67890 ." http://localhost:8080/travel
+
+curl -X POST -H "Content-Type: text/plain" -H "X-User-Name: Jane Smith" -d "Cancele a reserva 67890 ." http://localhost:8080/travel
+
+
+curl -X POST -H "Content-Type: text/plain" -d "Qual a politica de cancelamento para o pacote Aventura Amazonia?" http://localhost:8080/travel
+
+curl -X POST -H "Content-Type: text/plain" -d "Quanto custa um pacote de viagem para Bahamas?" http://localhost:8080/travel
+
+
