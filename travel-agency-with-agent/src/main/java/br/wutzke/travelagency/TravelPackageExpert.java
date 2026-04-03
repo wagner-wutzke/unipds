@@ -3,9 +3,8 @@ package br.wutzke.travelagency;
 import dev.langchain4j.service.MemoryId;
 import dev.langchain4j.service.SystemMessage;
 import dev.langchain4j.service.UserMessage;
-import io.quarkiverse.langchain4j.RegisterAiService;
+import io.quarkiverse.langchain4j.mcp.runtime.McpToolBox;
 
-@RegisterAiService(tools = BookingTools.class)
 public interface TravelPackageExpert {
 
     @SystemMessage("""
@@ -16,6 +15,7 @@ public interface TravelPackageExpert {
         Se a resposta para uma pergunta não estiver nos documentos, você deve responder educadamente:
         'Desculpe, mas não tenho informações sobre isso. Posso ajudar com mais alguma dúvida sobre nossos pacotes?'
         """)
+    @McpToolBox("booking-server")
     String chat(@MemoryId String memoryId, @UserMessage String userMessage);
 
 
